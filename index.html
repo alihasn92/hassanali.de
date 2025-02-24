@@ -4,61 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hassan Ali - AI & ML Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Alpine.js for interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
     <header class="bg-white shadow-md py-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center px-6">
             <h1 class="text-2xl font-bold">Hassan Ali</h1>
             <nav>
-                <a href="#about" class="px-4">About</a>
-                <a href="#projects" class="px-4">Projects</a>
-                <a href="#contact" class="px-4">Contact</a>
+                <a href="#about" class="px-4 hover:text-blue-500">About</a>
+                <a href="#projects" class="px-4 hover:text-blue-500">Projects</a>
+                <a href="#contact" class="px-4 hover:text-blue-500">Contact</a>
             </nav>
         </div>
     </header>
-    
-    <section class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center">
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white text-center">
         <div>
-            <h2 class="text-5xl font-extrabold">Building AI-Powered Solutions</h2>
+            <h2 class="text-5xl font-extrabold animate-bounce">Building AI-Powered Solutions</h2>
             <p class="mt-4 text-lg">ML Engineer | Generative AI Specialist | GCP & NVIDIA Expert</p>
-            <a href="#contact" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg shadow-lg font-semibold">Get in Touch</a>
+            <a href="#contact" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg shadow-lg font-semibold hover:bg-gray-200 transition duration-300">Get in Touch</a>
         </div>
     </section>
-    
+
+    <!-- About Section -->
     <section id="about" class="container mx-auto py-20 px-6 text-center">
         <h2 class="text-4xl font-bold">About Me</h2>
         <p class="mt-4 text-lg max-w-3xl mx-auto">
-            I am an experienced Machine Learning Engineer specializing in Generative AI, NLP, and cloud platforms like GCP. I have worked with top organizations like Deloitte and Nvidia, developing AI-driven applications and digital twins.
+            I am an experienced Machine Learning Engineer specializing in Generative AI, NLP, and cloud platforms like GCP. I have collaborated with top organizations such as Deloitte and NVIDIA, developing AI-driven applications and digital twins.
         </p>
     </section>
-    
+
+    <!-- Projects Section -->
     <section id="projects" class="bg-gray-100 py-20 px-6 text-center">
         <h2 class="text-4xl font-bold">Projects</h2>
         <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="p-6 bg-white rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold">AI Digital Twins</h3>
-                <p class="mt-2">Developed digital twins using Nvidia Omniverse for HSE projects.</p>
+            <!-- Project 1 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300" x-data="{ open: false }">
+                <h3 class="text-xl font-semibold cursor-pointer" @click="open = !open">AI Digital Twins</h3>
+                <p class="mt-2" x-show="open" x-transition>Developed digital twins using NVIDIA Omniverse for HSE projects.</p>
             </div>
-            <div class="p-6 bg-white rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold">GenAI Applications</h3>
-                <p class="mt-2">Built enterprise-grade GenAI solutions using OpenAI and Nvidia NeMo.</p>
+            <!-- Project 2 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300" x-data="{ open: false }">
+                <h3 class="text-xl font-semibold cursor-pointer" @click="open = !open">GenAI Applications</h3>
+                <p class="mt-2" x-show="open" x-transition>Built enterprise-grade GenAI solutions using OpenAI and NVIDIA NeMo.</p>
             </div>
-            <div class="p-6 bg-white rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold">Manufacturing ML</h3>
-                <p class="mt-2">Applied ML to process monitoring in manufacturing for efficiency optimization.</p>
+            <!-- Project 3 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300" x-data="{ open: false }">
+                <h3 class="text-xl font-semibold cursor-pointer" @click="open = !open">Manufacturing ML</h3>
+                <p class="mt-2" x-show="open" x-transition>Applied ML to process monitoring in manufacturing for efficiency optimization.</p>
             </div>
         </div>
     </section>
-    
+
+    <!-- Contact Section -->
     <section id="contact" class="container mx-auto py-20 px-6 text-center">
         <h2 class="text-4xl font-bold">Contact Me</h2>
         <p class="mt-4">Interested in working together? Reach out via email.</p>
-        <a href="mailto:contact@hassanali.de" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg font-semibold">Email Me</a>
+        <a href="mailto:alihasn92@gmail.com" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg font-semibold hover:bg-blue-700 transition duration-300">Email Me</a>
     </section>
-    
+
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white text-center py-6">
         <p>&copy; 2025 Hassan Ali. All rights reserved.</p>
     </footer>
