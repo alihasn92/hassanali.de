@@ -1,215 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hassan Ali - Senior Machine Learning Engineer</title>
-  <!-- Tailwind CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hassan Ali | Senior Machine Learning Engineer</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <!-- Header -->
-  <header class="bg-white shadow fixed w-full z-10">
-    <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-2xl font-bold">Hassan Ali</h1>
-      <nav>
-        <a href="#about" class="px-4 hover:text-blue-500">About</a>
-        <a href="#skills" class="px-4 hover:text-blue-500">Skills</a>
-        <a href="#experience" class="px-4 hover:text-blue-500">Experience</a>
-        <a href="#education" class="px-4 hover:text-blue-500">Education</a>
-        <a href="#certifications" class="px-4 hover:text-blue-500">Certifications</a>
-        <a href="#contact" class="px-4 hover:text-blue-500">Contact</a>
+<body class="bg-white text-gray-900 scroll-smooth">
+
+  <!-- Navigation -->
+  <header class="fixed w-full bg-white shadow z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-xl font-bold">Hassan Ali</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#experience" class="hover:text-blue-600">Experience</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#education" class="hover:text-blue-600">Education</a>
+        <a href="#certifications" class="hover:text-blue-600">Certifications</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-blue-500 text-white h-screen flex items-center justify-center">
-    <div class="text-center">
+  <!-- Hero -->
+  <section id="hero" class="h-screen flex items-center justify-center bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white">
+    <div class="text-center px-6">
       <h2 class="text-5xl font-extrabold">Hassan Ali</h2>
-      <p class="mt-4 text-lg">Senior Machine Learning Engineer</p>
-      <a href="#contact" class="mt-6 inline-block bg-white text-blue-500 px-6 py-3 rounded-lg shadow-lg font-semibold hover:bg-gray-100 transition duration-300">Get in Touch</a>
+      <p class="mt-4 text-xl">Senior Machine Learning Engineer</p>
+      <div class="mt-6 flex justify-center space-x-4">
+        <a href="#contact" class="bg-blue-600 px-5 py-3 rounded-md font-medium hover:bg-blue-700">Contact Me</a>
+        <a href="/Hassan_Ali_CV.pdf" class="bg-gray-700 px-5 py-3 rounded-md font-medium hover:bg-gray-800">Download CV</a>
+      </div>
+      <p class="mt-4">alihasn92@gmail.com | Germany</p>
     </div>
   </section>
 
-  <!-- About Me Section -->
+  <!-- About -->
   <section id="about" class="container mx-auto py-20 px-6 text-center">
-    <h2 class="text-4xl font-bold">About Me</h2>
-    <p class="mt-4 text-lg max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold">About Me</h2>
+    <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-700">
       Senior Machine Learning Engineer with over 7 years of experience in developing and deploying scalable ML models for production, optimizing predictive analytics pipelines, and implementing MLOps solutions. Skilled in designing distributed systems, leveraging cloud platforms (AWS, GCP, Azure), and containerization tools (Docker, Kubernetes). Proven track record in predictive analytics, A/B testing, and experimentation workflows to deliver measurable business value. Passionate about educating teams, fostering collaboration, and staying at the forefront of AI innovation.
     </p>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="bg-white py-20 px-6 text-center">
-    <h2 class="text-4xl font-bold">Skills</h2>
-    <div class="mt-10 flex flex-wrap justify-center">
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Python</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">SQL</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Neo4j</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">TensorFlow</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Scikit-learn</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Google Cloud Platform</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">AWS</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Nvidia AI</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Docker</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Kubernetes</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Langchain</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Matlab</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Predictive Analysis</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Git/Jira</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Trello</span>
-      <span class="m-2 bg-blue-500 text-white px-4 py-2 rounded-full">Dataiku</span>
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-50 py-20 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center">Skills</h2>
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div>
+          <h3 class="font-semibold text-lg">Technical Skills</h3>
+          <p class="mt-2 text-gray-700">Python, SQL, Neo4j, TensorFlow, Scikit-learn, GCP, AWS, Nvidia AI, Docker, Kubernetes, Langchain, Matlab, Dataiku</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Business Skills</h3>
+          <p class="mt-2 text-gray-700">Data Science & Advanced Analytics, Data Strategy & Architecture, Agile Project Management, Dashboarding, Process Automation</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Languages</h3>
+          <p class="mt-2 text-gray-700">English, Deutsch</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
+  <!-- Experience -->
   <section id="experience" class="container mx-auto py-20 px-6">
-    <h2 class="text-4xl font-bold text-center">Professional Experience</h2>
+    <h2 class="text-3xl font-bold text-center">Experience</h2>
     <div class="mt-10 space-y-12">
       <!-- Deloitte -->
       <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-2xl font-semibold">Senior Consultant - Data and AI</h3>
-        <p class="text-blue-500">Deloitte Consulting GmbH, Frankfurt Am Main, DE | Jun 2022 - Present</p>
+        <h3 class="text-xl font-semibold">Senior Consultant - Data and AI</h3>
+        <p class="text-blue-600">Deloitte Consulting GmbH, Frankfurt Am Main, DE | Jun 2022 - Present</p>
         <ul class="mt-4 list-disc ml-6 text-gray-700 space-y-2">
-          <li>Led the development of a predictive maintenance early warning system, reducing breakdown costs by 55%.</li>
-          <li>Designed and deployed a Gen-AI chatbot using Azure OpenAI Studio for automating business queries.</li>
-          <li>Fine-tuned PubMed-BERT on medical datasets to improve disease classification accuracy, deployed via GCP Vertex AI.</li>
-          <li>Led a multinational team to build an HSE simulation system using AI-driven digital twins.</li>
-          <li>Implemented experimentation workflows, including A/B testing, to enhance marketing strategies.</li>
-          <li>Integrated ML pipelines using Docker, Kubernetes, and cloud-native solutions for scalability and reliability.</li>
-          <li>Developed monitoring frameworks for continuous optimization of ML model performance.</li>
+          <li>Led predictive maintenance system reducing breakdown costs by 55%.</li>
+          <li>Built Gen-AI chatbot with Azure OpenAI Studio for business queries.</li>
+          <li>Fine-tuned PubMed-BERT on medical datasets for disease classification.</li>
+          <li>Led multinational team to develop AI-driven digital twins for HSE simulation.</li>
         </ul>
       </div>
-      <!-- Bellissy Data Scientist -->
+      <!-- Bellissy -->
       <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-2xl font-semibold">Data Scientist</h3>
-        <p class="text-blue-500">Bellissy Deutschland GmbH, Frankfurt Am Main, DE | Jul 2019 - May 2022</p>
+        <h3 class="text-xl font-semibold">Data Scientist</h3>
+        <p class="text-blue-600">Bellissy Deutschland GmbH, Frankfurt Am Main, DE | Jul 2019 - May 2022</p>
         <ul class="mt-4 list-disc ml-6 text-gray-700 space-y-2">
-          <li>Developed and deployed multiple NLP models for product catalog data, improving retrieval accuracy.</li>
-          <li>Built a time-series AI fraud detection model reducing pay-per-click losses by 30%.</li>
-          <li>Automated ML pipelines for real-time data processing using Docker, Kubernetes, and cloud services.</li>
-          <li>Implemented a scalable recommender system to enhance personalized shopping experiences.</li>
-          <li>Designed software architecture connecting predictive ML models, databases, and real-time interactions.</li>
-          <li>Developed experimentation frameworks, including A/B testing to evaluate model effectiveness.</li>
+          <li>Developed NLP models improving catalog retrieval accuracy.</li>
+          <li>Built time-series fraud detection reducing PPC losses by 30%.</li>
         </ul>
       </div>
-      <!-- Bellissy Application Developer -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-2xl font-semibold">Application Developer</h3>
-        <p class="text-blue-500">Bellissy Deutschland GmbH, Frankfurt Am Main, DE | Jun 2018 - Jun 2019</p>
-        <ul class="mt-4 list-disc ml-6 text-gray-700 space-y-2">
-          <li>Built and maintained ETL pipelines for product catalogue data and integrated Facebook Business APIs.</li>
-        </ul>
-      </div>
-      <!-- democy Product Development Manager -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-2xl font-semibold">Product Development Manager</h3>
-        <p class="text-blue-500">democy UG, Remote, DE | Sep 2019 - May 2022</p>
-        <ul class="mt-4 list-disc ml-6 text-gray-700 space-y-2">
-          <li>Led the growth roadmap from development to launch, achieving over 100% user growth.</li>
-          <li>Established communication protocols between development teams and product stakeholders.</li>
-        </ul>
-      </div>
-      <!-- democy Mobile Application Developer -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-2xl font-semibold">Mobile Application Developer</h3>
-        <p class="text-blue-500">democy UG, Remote, DE | Nov 2017 - Aug 2019</p>
-        <ul class="mt-4 list-disc ml-6 text-gray-700 space-y-2">
-          <li>Developed a mobile application from scratch.</li>
-        </ul>
-      </div>
-      <!-- TU Darmstadt Student Research Assistant -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-2xl font-semibold">Student Research Assistant</h3>
-        <p class="text-blue-500">Institut für Produktionstechnik und Umformmaschinen, TU Darmstadt, DE | Oct 2018 - Jun 2019</p>
-        <ul class="mt-4 list-disc ml-6 text-gray-700 space-y-2">
-          <li>Developed a dashboard for sensor signal visualization for a 3D-Servo press-machine.</li>
-        </ul>
-      </div>
-      <!-- Goethe Universität Student Research Assistant -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-2xl font-semibold">Student Research Assistant</h3>
-        <p class="text-blue-500">Goethe Universität, Frankfurt Am Main, DE | Jul 2017 - Sep 2018</p>
-        <ul class="mt-4 list-disc ml-6 text-gray-700 space-y-2">
-          <li>Developed a 3-step model-based fraud risk analysis framework to proactively mitigate potential threats.</li>
-        </ul>
+      <!-- More entries... -->
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-gray-50 py-20 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center">Projects</h2>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="font-semibold">Predictive Maintenance System</h3>
+          <p class="mt-2 text-gray-700">Anomaly detection pipelines reducing heavy machinery downtime.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="font-semibold">Gen-AI Chatbot</h3>
+          <p class="mt-2 text-gray-700">Automated responses using Azure OpenAI for business queries.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section id="education" class="bg-white py-20 px-6 text-center">
-    <h2 class="text-4xl font-bold">Education</h2>
+  <!-- Education -->
+  <section id="education" class="container mx-auto py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold">Education</h2>
     <div class="mt-10 space-y-8">
-      <div class="bg-gray-50 p-6 rounded-lg shadow">
-        <h3 class="text-2xl font-semibold">M.Sc. Distributed Software Systems</h3>
-        <p class="text-blue-500">Technische Universität Darmstadt | Oct 2016 - Feb 2020</p>
-        <p class="mt-2 text-gray-700">Major: Data Science and Machine Learning</p>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold">M.Sc. Distributed Software Systems</h3>
+        <p class="text-blue-600">Technische Universität Darmstadt | Oct 2016 - Feb 2020</p>
       </div>
-      <div class="bg-gray-50 p-6 rounded-lg shadow">
-        <h3 class="text-2xl font-semibold">B.Sc. Software Engineering</h3>
-        <p class="text-blue-500">University of Engineering and Technology, Taxila | Nov 2011 - Dec 2015</p>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold">B.Sc. Software Engineering</h3>
+        <p class="text-blue-600">University of Engineering and Technology, Taxila | Nov 2011 - Dec 2015</p>
       </div>
     </div>
   </section>
 
-  <!-- Certifications & Awards Section -->
-  <section id="certifications" class="bg-gray-100 py-20 px-6 text-center">
-    <h2 class="text-4xl font-bold">Certifications & Awards</h2>
-    <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold">SAP Hack2Build Hackathon Winner Award</h3>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold">CSM I Certified Scrum Master</h3>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold">Scaled Agile Framework Certified SAFe® Agilist</h3>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold">Neo4j Certified Professional</h3>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold">Google Cloud Professional Machine Learning Engineer</h3>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold">Google Cloud Associate Cloud Engineer</h3>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold">Google Cloud Cloud Digital Leader</h3>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold">Nvidia AI Supercomputer Certified</h3>
+  <!-- Certifications -->
+  <section id="certifications" class="bg-gray-50 py-20 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">Certifications & Awards</h2>
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow">Google Cloud Professional Machine Learning Engineer</div>
+        <div class="bg-white p-4 rounded-lg shadow">SAP Hack2Build Winner</div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact" class="container mx-auto py-20 px-6 text-center">
-    <h2 class="text-4xl font-bold">Contact Me</h2>
-    <p class="mt-4 text-lg">Interested in collaborating or learning more? Reach out via email or fill out the form below.</p>
-    <div class="mt-6 flex flex-col items-center">
-      <a href="mailto:alihasn92@gmail.com" class="mb-4 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg font-semibold hover:bg-blue-600 transition duration-300">Email Me</a>
-      <!-- Contact Form -->
-      <form class="w-full max-w-lg bg-white p-6 rounded-lg shadow-md">
-        <div class="mb-4">
-          <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
-        </div>
-        <div class="mb-4">
-          <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
-        </div>
-        <div class="mb-4">
-          <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-        </div>
-        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-300">Send Message</button>
-      </form>
-    </div>
+    <h2 class="text-3xl font-bold">Get In Touch</h2>
+    <p class="mt-4 text-gray-700">Reach out for collaborations or opportunities.</p>
+    <a href="mailto:alihasn92@gmail.com" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700">alihasn92@gmail.com</a>
+    <!-- Simple form -->
   </section>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white text-center py-6">
     <p>&copy; 2025 Hassan Ali. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
