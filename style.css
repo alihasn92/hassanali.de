@@ -1,0 +1,235 @@
+/* ==== GLOBAL RESET ==== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+/* ==== LAYOUT ==== */
+.sidebar {
+  position: fixed;
+  left: 0; top: 0; bottom: 0;
+  width: 280px;
+  background: #1f1f1f;
+  color: #eee;
+  overflow-y: auto;
+}
+.sidebar__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.sidebar__avatar {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.sidebar__name {
+  font-size: 1.5rem;
+  margin-bottom: .25rem;
+}
+.sidebar__title {
+  font-size: .9rem;
+  color: #bbb;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.sidebar__nav a {
+  display: block;
+  padding: .5rem 0;
+  color: #eee;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  transition: background .2s;
+}
+.sidebar__nav a:hover {
+  background: #333;
+}
+.sidebar__socials {
+  margin: 2rem 0;
+  display: flex;
+  gap: .5rem;
+}
+.sidebar__socials a {
+  font-size: .9rem;
+  color: #eee;
+  text-decoration: none;
+}
+.sidebar__cta {
+  margin-top: auto;
+  padding: .5rem 1rem;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background .2s;
+}
+.sidebar__cta:hover {
+  background: #0056b3;
+}
+
+/* MAIN CONTENT & SCROLL SNAP */
+.main {
+  margin-left: 280px;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.section {
+  padding: 4rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  scroll-snap-align: start;
+}
+.section:nth-child(even) {
+  background: #fafafa;
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* SKILLS GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.skills-grid div {
+  background: #e9ecef;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.timeline__item h3 {
+  font-size: 1.25rem;
+  color: #007bff;
+}
+.timeline__meta {
+  font-size: .9rem;
+  color: #555;
+}
+.timeline__item ul {
+  margin-top: .5rem;
+  padding-left: 1.25rem;
+}
+.timeline__item ul li {
+  margin-bottom: .5rem;
+  line-height: 1.4;
+}
+
+/* PROJECTS GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.project {
+  background: #e9ecef;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+/* EDUCATION */
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.edu-grid > div {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+/* CERTIFICATIONS */
+.cert-list {
+  list-style: none;
+  columns: 2;
+  column-gap: 2rem;
+  margin-top: 1.5rem;
+}
+.cert-list li {
+  margin-bottom: .5rem;
+}
+
+/* CONTACT FORM */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background .2s;
+}
+.btn:hover {
+  background: #0056b3;
+}
+.contact-form {
+  margin-top: 2rem;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: .75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form button {
+  padding: .75rem;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .2s;
+}
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+  .sidebar__inner { padding: 1rem .5rem; }
+  .sidebar__name,
+  .sidebar__title,
+  .sidebar__nav a,
+  .sidebar__socials a,
+  .sidebar__cta {
+    display: none;
+  }
+  .main {
+    margin-left: 60px;
+  }
+}
