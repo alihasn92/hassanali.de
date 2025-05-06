@@ -1,155 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hassan Ali | Senior Machine Learning Engineer</title>
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hassan Ali | Senior ML Engineer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-white text-gray-900 scroll-smooth">
-
-  <!-- Navigation -->
-  <header class="fixed w-full bg-white shadow z-50">
-    <div class="container mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-xl font-bold">Hassan Ali</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="#skills" class="hover:text-blue-600">Skills</a>
-        <a href="#experience" class="hover:text-blue-600">Experience</a>
-        <a href="#projects" class="hover:text-blue-600">Projects</a>
-        <a href="#education" class="hover:text-blue-600">Education</a>
-        <a href="#certifications" class="hover:text-blue-600">Certifications</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
+<body>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar__inner">
+      <img src="your-photo.jpg" alt="Hassan Ali" class="sidebar__avatar" />
+      <h1 class="sidebar__name">Hassan Ali</h1>
+      <p class="sidebar__title">Senior Machine Learning Engineer</p>
+      <nav class="sidebar__nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section id="hero" class="h-screen flex items-center justify-center bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white">
-    <div class="text-center px-6">
-      <h2 class="text-5xl font-extrabold">Hassan Ali</h2>
-      <p class="mt-4 text-xl">Senior Machine Learning Engineer</p>
-      <div class="mt-6 flex justify-center space-x-4">
-        <a href="#contact" class="bg-blue-600 px-5 py-3 rounded-md font-medium hover:bg-blue-700">Contact Me</a>
-        <a href="/Hassan_Ali_CV.pdf" class="bg-gray-700 px-5 py-3 rounded-md font-medium hover:bg-gray-800">Download CV</a>
+      <div class="sidebar__socials">
+        <a href="https://github.com/alihasn92" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="mailto:alihasn92@gmail.com">Email</a>
       </div>
-      <p class="mt-4">alihasn92@gmail.com | Germany</p>
+      <a href="Hassan_Ali_CV.pdf" class="sidebar__cta" download>Download CV</a>
     </div>
-  </section>
+  </aside>
 
-  <!-- About -->
-  <section id="about" class="container mx-auto py-20 px-6 text-center">
-    <h2 class="text-3xl font-bold">About Me</h2>
-    <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-700">
-      Senior Machine Learning Engineer with over 7 years of experience in developing and deploying scalable ML models for production, optimizing predictive analytics pipelines, and implementing MLOps solutions. Skilled in designing distributed systems, leveraging cloud platforms (AWS, GCP, Azure), and containerization tools (Docker, Kubernetes). Proven track record in predictive analytics, A/B testing, and experimentation workflows to deliver measurable business value. Passionate about educating teams, fostering collaboration, and staying at the forefront of AI innovation.
-    </p>
-  </section>
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>Senior Machine Learning Engineer with over 7 years of experience in developing &amp; deploying scalable ML models for production, optimizing predictive analytics pipelines, and implementing MLOps solutions. Skilled in distributed systems, cloud (AWS, GCP, Azure), Docker &amp; Kubernetes. Proven track record in predictive analytics, A/B testing, and experimentation workflows. Passionate about educating teams and driving AI innovation.</p>
+    </section>
 
-  <!-- Skills -->
-  <section id="skills" class="bg-gray-50 py-20 px-6">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center">Skills</h2>
-      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div><strong>Programming & Data Science</strong><br/>Python, SQL, Neo4j, TensorFlow, Scikit-learn, Matlab</div>
+        <div><strong>Cloud & DevOps</strong><br/>AWS, GCP, Azure, Docker, Kubernetes</div>
+        <div><strong>MLOps & Tools</strong><br/>LangChain, Dataiku, Git, Jira, Trello</div>
+        <div><strong>Analytics</strong><br/>Predictive Analysis, Data Strategy, Dashboarding, Automation</div>
+        <div><strong>Languages</strong><br/>English, Deutsch</div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline__item">
+          <h3>Senior Consultant – Data &amp; AI</h3>
+          <span class="timeline__meta">Deloitte, Jun 2022 – Present</span>
+          <ul>
+            <li>Built a predictive maintenance early warning system; cut breakdown costs by 55%.</li>
+            <li>Deployed Gen-AI chatbot via Azure OpenAI Studio for automated business queries.</li>
+            <li>Fine-tuned PubMed-BERT on medical datasets; real-time inference on GCP Vertex AI.</li>
+            <li>Led multi-region team on AI-driven HSE digital twins for operational compliance.</li>
+            <li>Designed A/B experimentation workflows for forecasting car order volumes.</li>
+            <li>Containerized ML pipelines with Docker &amp; Kubernetes; ensured scalable reliability.</li>
+            <li>Built monitoring frameworks for continuous model performance optimization.</li>
+          </ul>
+        </div>
+        <!-- Repeat for other roles... -->
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Predictive Maintenance System</h3>
+          <p>Early warning system for heavy machinery failures—55% cost reduction.</p>
+        </div>
+        <div class="project">
+          <h3>Gen-AI Chatbot</h3>
+          <p>Automated queries for business using Azure OpenAI Studio.</p>
+        </div>
+        <!-- Add more projects similarly -->
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="edu-grid">
         <div>
-          <h3 class="font-semibold text-lg">Technical Skills</h3>
-          <p class="mt-2 text-gray-700">Python, SQL, Neo4j, TensorFlow, Scikit-learn, GCP, AWS, Nvidia AI, Docker, Kubernetes, Langchain, Matlab, Dataiku</p>
+          <h3>M.Sc. Distributed Software Systems</h3>
+          <span>TU Darmstadt, Oct 2016 – Feb 2020</span>
+          <p>Major: Data Science &amp; Machine Learning</p>
         </div>
         <div>
-          <h3 class="font-semibold text-lg">Business Skills</h3>
-          <p class="mt-2 text-gray-700">Data Science & Advanced Analytics, Data Strategy & Architecture, Agile Project Management, Dashboarding, Process Automation</p>
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg">Languages</h3>
-          <p class="mt-2 text-gray-700">English, Deutsch</p>
+          <h3>B.Sc. Software Engineering</h3>
+          <span>UET Taxila, Nov 2011 – Dec 2015</span>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience -->
-  <section id="experience" class="container mx-auto py-20 px-6">
-    <h2 class="text-3xl font-bold text-center">Experience</h2>
-    <div class="mt-10 space-y-12">
-      <!-- Deloitte -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold">Senior Consultant - Data and AI</h3>
-        <p class="text-blue-600">Deloitte Consulting GmbH, Frankfurt Am Main, DE | Jun 2022 - Present</p>
-        <ul class="mt-4 list-disc ml-6 text-gray-700 space-y-2">
-          <li>Led predictive maintenance system reducing breakdown costs by 55%.</li>
-          <li>Built Gen-AI chatbot with Azure OpenAI Studio for business queries.</li>
-          <li>Fine-tuned PubMed-BERT on medical datasets for disease classification.</li>
-          <li>Led multinational team to develop AI-driven digital twins for HSE simulation.</li>
-        </ul>
-      </div>
-      <!-- Bellissy -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold">Data Scientist</h3>
-        <p class="text-blue-600">Bellissy Deutschland GmbH, Frankfurt Am Main, DE | Jul 2019 - May 2022</p>
-        <ul class="mt-4 list-disc ml-6 text-gray-700 space-y-2">
-          <li>Developed NLP models improving catalog retrieval accuracy.</li>
-          <li>Built time-series fraud detection reducing PPC losses by 30%.</li>
-        </ul>
-      </div>
-      <!-- More entries... -->
-    </div>
-  </section>
+    <!-- Certifications -->
+    <section id="certifications" class="section">
+      <h2>Certifications & Awards</h2>
+      <ul class="cert-list">
+        <li>SAP Hack2Build Winner</li>
+        <li>Certified Scrum Master (CSM I)</li>
+        <li>SAFe® Agilist</li>
+        <li>Neo4j Certified Professional</li>
+        <li>Google Cloud Professional ML Engineer</li>
+        <li>Google Cloud Associate Cloud Engineer</li>
+        <li>GCP Digital Leader</li>
+        <li>NVIDIA AI Supercomputer Certified</li>
+      </ul>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="bg-gray-50 py-20 px-6">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center">Projects</h2>
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="font-semibold">Predictive Maintenance System</h3>
-          <p class="mt-2 text-gray-700">Anomaly detection pipelines reducing heavy machinery downtime.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="font-semibold">Gen-AI Chatbot</h3>
-          <p class="mt-2 text-gray-700">Automated responses using Azure OpenAI for business queries.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education" class="container mx-auto py-20 px-6 text-center">
-    <h2 class="text-3xl font-bold">Education</h2>
-    <div class="mt-10 space-y-8">
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold">M.Sc. Distributed Software Systems</h3>
-        <p class="text-blue-600">Technische Universität Darmstadt | Oct 2016 - Feb 2020</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold">B.Sc. Software Engineering</h3>
-        <p class="text-blue-600">University of Engineering and Technology, Taxila | Nov 2011 - Dec 2015</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certifications" class="bg-gray-50 py-20 px-6">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold">Certifications & Awards</h2>
-      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div class="bg-white p-4 rounded-lg shadow">Google Cloud Professional Machine Learning Engineer</div>
-        <div class="bg-white p-4 rounded-lg shadow">SAP Hack2Build Winner</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="container mx-auto py-20 px-6 text-center">
-    <h2 class="text-3xl font-bold">Get In Touch</h2>
-    <p class="mt-4 text-gray-700">Reach out for collaborations or opportunities.</p>
-    <a href="mailto:alihasn92@gmail.com" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700">alihasn92@gmail.com</a>
-    <!-- Simple form -->
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-6">
-    <p>&copy; 2025 Hassan Ali. All rights reserved.</p>
-  </footer>
-
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaborations or questions.</p>
+      <a href="mailto:alihasn92@gmail.com" class="btn">alihasn92@gmail.com</a>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
